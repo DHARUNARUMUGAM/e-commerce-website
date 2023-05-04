@@ -1,0 +1,256 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+Remove Browser styles
+:root{
+ --Primary:#e52165;
+ --secondary:#0d1137;
+ --secondarylight:#0d1137be;
+}
+::selection{
+    color: #e52165;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.h2{
+    color: white;
+}
+.head{
+    color: white;
+}
+.topic{
+    color: white;
+    text-align: center;
+    margin: 0% 0% 0% -10%;
+    background-color: #e52165;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu{
+    margin-left : 50%;
+}
+li{
+    list-style-type:none;
+}
+a{
+    text-decoration: double;
+    text-decoration-color: black;
+    text-shadow: black;
+    color: white;
+    
+}
+a.visited{
+    color:white
+}
+img{
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+}
+header{
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.022),rgba(0, 0, 0, 0.46)),/*url(back.jpg)*/;
+    background-color: skyblue;
+}
+.header-content{
+    
+    background-color: #0d1137; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:17vh;
+}
+.logo{
+    height: 100px;
+    margin-left: 2%;
+}
+.nav-links{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    font-family: cursive;
+    font-size: medium;
+    align-items: center;
+
+}
+.nav-links a{
+    color: white;
+    }
+.nav-links li::after{
+    content: '';
+    display: block;
+    background-color:#e52165;
+    height:2px;
+    width:0%;
+    transition: width 300ms;
+}
+.nav-links li:hover::after{
+    width: 100%;
+}
+.nav-link li::after{
+    content: '';
+    display: block;
+    background-color:#e52165;
+    height:2px;
+    width:0%;
+    transition: width 300ms;
+}
+.nav-link li:hover::after{
+    width: 100%;
+}
+.fa-bars{
+    color: white;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+.burgers{
+    cursor: pointer;
+    color: white;
+    size: 200%;
+    display: none;
+    margin-left: -30%;
+    text-align: left;
+}
+
+.nav{
+    margin-left: -30%;
+    margin-top: 1%;
+    text-align: left;
+}
+.text-center{
+    align-items: center;
+    margin: 0% 0% 0% 0%;
+}
+.overall{
+    transition: all 200ms;
+}
+.text-content{
+    color:white;
+    background-color:white;
+    margin: 0% 0% 0% 0%;
+    top: 0;  
+}
+.imhw{
+    margin:0% 0% 0% 0%;
+}
+  
+.imhw::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scale(0);
+    transition: transform 300ms;
+    background-color: rgba(0, 0, 0, 0.249);
+}
+.imhw:hover.imhw::after{
+    transform: scale(1);
+}
+.politics{
+    position: relative;
+}
+.cimg{
+    position: absolute;
+    color:white;
+    top: 80%;
+    opacity: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: top 300ms, opacity 350ms;
+}
+.politics:hover .cimg{
+    top: 50%;
+    opacity: 100%;
+}
+.text-content{
+    top: 10px;
+    display: grid;
+    grid-gap:5px ;
+    background-color: white;
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+}
+.nav-link{
+    position: absolute;
+    flex-direction: column;
+    background-color: black;
+    right: -10rem;
+    top: 22vh;
+    height: 70vh;
+    width: 0%;
+    padding: 1.5rem 0;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: large;
+}
+.nav-text{
+    margin-left: -4%;
+}
+.nav-link::after{
+        position: absolute;
+        flex-direction: column;
+        background-color: black;
+        right: -10rem;
+        top: 17vh;
+        height: 50vh;
+        width: 0%;
+        padding: 1.5rem 0;
+        transition: all 400ms;
+    }
+    .burger{
+        display:block;
+        color: white;
+    }
+.burgers{
+        display:block;
+}
+.nav-shows{
+        width: 24%;
+        left: 0px;
+    }
+.nav-show{
+    width: 100%;
+    right: 0px;
+}
+.textareahide{
+    margin-top: 57vh;
+}
+
+/*payment*/
+.forms{
+    margin-top: 5%;
+    margin-left: 45%;
+    border: 1px solid black;
+    color: white;
+    width: 40%;
+    height: 70%;
+    border: 1px solid white;
+    background-color:rgba(0, 0, 0, 0.481);
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+}
+.buton{
+    background-color: #e52165;
+    color: #0d1137;
+    text-align: center;
+    padding: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+
+
+
+
